@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+<div class="container">
+<div class="content">
+<div class="title">
+  <h1 class="heading">Simple, traffic-based pricing</h1>
+  <p class="first_paragraph">Sign-up for our 30-day trial.No credit card required. </p>
+</div>
+<div class="card">
+  <div class="first_line">
+<p class="views" ><span id="pageviews"></span>K PAGEVIEWS</p>
+<h1 class="pricePerMonth " id="monthyear" >$
+  <span id="price_month"></span>
+  <span id="price_year" class="Yearhiden"></span>.00
+  <span class="month" id="month">/month</span>
+  <span class="year" id="year">/Year</span></h1>
+</div>
+<div class="Price_range">
+  <input type="range" min="0" max="100" value="50" class="slider" step="25" id="myRange">
+  <input type="range" min="0" max="100" value="50" class="slider num2" step="25" id="myRange2">
+</div>
+
+<div class="billing">
+<p class="monthlybilling">Monthly Billing</p>
+<label class="switch">
+  <input type="checkbox" >
+  <span class="tick round"  id="boxswitch"></span>
+</label>
+
+<p class="Yearlybilling">Yearly Billing <span class="discount">25% discount</span></p>
+
+</div>
+
+</div>
+<div class="footer">
+  <div class="list">
+    <ul>
+      <li><img src="icon-check.svg">Unlimited websites </li>
+      <li><img src="icon-check.svg"> 100% data ownership </li>
+      <li><img src="icon-check.svg">Email reports Start my trial </li>
+    </ul>
+  </div>
+  <div class="button">
+   <a href="#"> <button>Start my Trial</button></a> 
+  </div>
+</div>
+</div>
+
+
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

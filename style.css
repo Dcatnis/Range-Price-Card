@@ -1,0 +1,361 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(249,250,255);
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.title{
+    
+    background-image: url(pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 165px 165px;
+    padding-top: 65px;
+    padding-bottom: 96px;
+    
+}
+.heading{
+   margin: 0 auto; 
+   color: rgb(35,45,72);
+}
+.first_paragraph{
+    color: rgb(135,141,155);
+}
+.card{
+   max-width: 500px;
+   width: 100%;
+   background-color: white;
+   margin:0 auto;
+   padding: 40px;
+   border-bottom: 1px solid rgb(241,240,245);
+   border-radius: 10px 10px 0px 0px ;
+   box-shadow: 0px 0px 14px -7px #888888;
+}
+
+.first_line{
+    display: flex;
+    align-items: center;
+
+}
+.pricePerMonth{
+    margin-left: auto;
+}
+.views{
+    color:rgb(135,141,155) ;
+}
+.month{
+    color:rgb(135,141,155) ;
+    font-size: 14px;
+}
+.hide{
+ display: none;
+}
+.year{
+  display: none;
+  color:rgb(135,141,155) ;
+  font-size: 14px;
+}
+.show{
+  display: inline-block;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg,rgb(23, 217, 206)60%,rgb(135,141,155)60%);
+    border-radius: 10px;
+    outline: none;
+    
+    
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(icon-slider.svg);
+    background-position: center;
+    background-size: 20px 15px;
+    background-repeat: no-repeat;
+    background-color: rgb(23, 217, 206);
+   
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 18px;
+    margin-left: 21px;
+  }
+  
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .tick {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  span.tick.round {
+    width: 75%;
+    height: 21px;
+}
+  
+  .tick:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .tick {
+    background-color: rgb(122,234,218);
+  }
+  
+  input:focus + .tick {
+    box-shadow: 0 0 1px rgb(122,234,218);
+  }
+  
+  input:checked + .tick:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .tick.round {
+    border-radius: 34px;
+  }
+  
+  .tick.round:before {
+    border-radius: 50%;
+  }
+  .billing{
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      
+  }
+  .monthlybilling{
+      font-size: 12px;
+      color: rgb(154,156,168);
+      margin-left: 160px;
+  }
+.Yearlybilling{
+    font-size: 12px;
+      color: rgb(154,156,168);
+}
+.discount{
+    color: rgb(202,154,134);
+    background-color: rgb(255,241,238);
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+   width: 100%;
+   background-color: white;
+   margin:0 auto;
+   padding: 30px 40px;
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: 0px 10px 20px -12px #888888;
+   
+}
+ul{
+    margin: 0px 0px 0px -40px;
+   
+}
+li{
+    list-style: none;
+    text-align: start;
+    font-size: 14px;
+    color: rgb(154,156,168);
+    margin-top: 12px;
+}
+li:first-child{
+    margin-top: 0px;
+}
+img{
+    margin-right: 17px;
+}
+.button{
+    margin-left: auto;
+}
+button{
+  max-width: 170px;
+  width: 100%;
+  padding:12px 43px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(41,51,86);
+  color: rgb(216,230,255);
+  outline: none;
+  
+
+  
+}
+button:hover{
+    color: white;
+    background-color:rgb(73, 83, 119) ;
+    outline: none;
+    
+}
+a{
+    text-decoration: none;
+   
+}
+.num2{
+  display: none;
+  
+}
+
+
+.hidemonth{
+  display: none;
+}
+.showyear{
+  display: block;
+}
+.Price_range{
+  height: 12px
+}
+.Yearhiden{
+  display: none;
+}
+.showYearprice{
+  display: inline-block;
+}
+.hidemonthprice{
+  display: none;
+}
+.mobile_price{
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+  .container{
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 ;
+    background: url(bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 500px 350px;
+}
+.content{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 140px;
+}
+.card{
+  max-width: 330px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  
+}
+.footer{
+  display: block;
+  align-items: center;
+  max-width: 330px;
+ width: 100%;
+ background-color: white;
+ margin:0 auto;
+ padding: 20px 10px;
+
+ 
+}
+.title{
+  background-position:center;
+  padding-top: 65px;
+    padding-bottom: 96px;
+}
+.heading{
+  margin: 0 auto; 
+  color: rgb(35,45,72);
+  font-size: 25px;
+}
+
+.monthlybilling{
+ 
+ margin: 0 auto;
+}
+.list{
+  margin-bottom: 40px;
+ 
+}
+ul{
+ margin: 0px 0px 0px 85px;
+ padding: 0px;
+ 
+}
+.pricePerMonth{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.billing{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+.views{
+  margin: 20px 99px;
+  font-size: 15px;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg,rgb(23, 217, 206)60%,rgb(135,141,155)60%);
+  border-radius: 10px;
+  outline: none;
+  
+  
+}
+
+
+}
